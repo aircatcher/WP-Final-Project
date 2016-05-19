@@ -1,2 +1,6 @@
 # Website
-Repo on all about websites
+My website repo
+
+<b>CLs:</b>
+<i>5/19/2016</i>
+* Initial setups
