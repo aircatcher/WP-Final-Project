@@ -36,7 +36,7 @@
                         <img alt="Brand" src="assets/images/logo/logo.png" style="width:50px">
                     </a>
                 </div>
-
+                
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -49,9 +49,10 @@
                                 <li><a href="#"class="trigger right-caret">Fiction</a>
                                     <ul class="dropdown-menu sub-menu">
                                         <li><a href="#">Horror</a></li>
-                                        <li><a href="#">Biography</a></li>
+                                        <li><a href="#">Paranormal</a></li>
                                         <li><a href="#">Art</a></li>
-                                        <li><a href="#">Fun</a></li>
+                                        <li><a href="#">Novel</a></li>
+                                        <li><a href="#">Fantasy</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#"class="trigger right-caret">Non-Fiction</a>
@@ -68,6 +69,9 @@
                         </li>
                     </ul>
                     
+                    <div id="">
+                        
+                    </div>
                     <div id="searchform">
                     <form id="searchform" name="searchform" method="get" action="index.html">
                         <div class="fieldcontainer">
@@ -81,7 +85,7 @@
                     </ul>
                 </div><!-- /.navbar-collapse -->
                 <!--Second row navbar-->
-                <div class="hideAfterScroll">
+                <div class="navbarScroll">
                     <ul class="nav navbar-nav" style="position:absolute; left:14px; top: 66%;">
                         <li><font color="#9D9D9D">News Feed: </font></li>
                     </ul>

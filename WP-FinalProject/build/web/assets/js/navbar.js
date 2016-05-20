@@ -204,10 +204,20 @@ $(function(){
 //Shrinking navbar animation
 $(window).scroll(function() {
   if ($(document).scrollTop() > 600) {
-      $('.hideAfterScroll').hide(250);
+      $('.navbarScroll').hide(250);
       $('nav').addClass('shrink');
   } else {
-      $('.hideAfterScroll').show(250);
+      $('.navbarScroll').show(250);
       $('nav').removeClass('shrink');
+  }
+});
+//Shrinking navbar animation
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 1500) {
+      $('.footerScroll').show(250);
+      $('nav').addClass('shrink');
+  } else {
+      $('.footerScroll').hide(250);
+      $('nav').removeClass('grow');
   }
 });
