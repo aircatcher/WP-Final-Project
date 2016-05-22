@@ -203,21 +203,11 @@ $(function(){
 
 //Shrinking navbar animation
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 600) {
+  if ($(document).scrollTop() > 800) {
       $('.navbarScroll').hide(250);
       $('nav').addClass('shrink');
   } else {
       $('.navbarScroll').show(250);
       $('nav').removeClass('shrink');
-  }
-});
-//Shrinking navbar animation
-$(window).scroll(function() {
-  if ($(document).scrollTop() > 1500) {
-      $('.footerScroll').show(250);
-      $('nav').addClass('shrink');
-  } else {
-      $('.footerScroll').hide(250);
-      $('nav').removeClass('grow');
   }
 });
