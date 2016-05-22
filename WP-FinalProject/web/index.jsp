@@ -9,11 +9,6 @@
         <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
         <link rel="icon" href="http://designshack.net/favicon.ico">
         
-        <script src="assets/js/jquery-1.12.3.min.js" type="text/javascript"></script>
-        <script src="assets/js/bootstrap.js" type="text/javascript"></script>
-        <script src="assets/js/navbar.js" type="text/javascript"></script>
-        <script src="assets/js/jsinput.js" type="text/javascript"></script>
-        
         <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
         <link href="assets/css/animations.css" rel="stylesheet" type="text/css"/>
@@ -86,6 +81,7 @@
                 </div><!-- /.navbar-collapse -->
                 <!--Second row navbar-->
                 <div class="navbarScroll">
+                <div class="hidden-sm hidden-xs">
                     <ul class="nav navbar-nav" style="position:absolute; left:14px; top: 66%;">
                         <li><font color="#9D9D9D">News Feed: </font></li>
                     </ul>
@@ -95,19 +91,23 @@
                         <li class="recentSearch"><font color="WHITE"><b>Text3</b></font></li>
                     </ul>
                 </div>
+                </div>
             </div><!-- /.container-fluid -->
         </nav>
         
         <!-- ************************ HEADER ************************ -->
+        
         <div id="headerWrap">
             <div id="headerLogo"></div>
-            <div id="fore-keyboard"></div>
-            <div id="fore-mouse"></div>
-            <div id="fore-notebook"></div>
-            <div id="fore-monitor"></div>
-            <div id="fore-stack"></div>
-            <div id="fore-hdd"></div>
-            <div id="fore-scanner"></div>
+            <div class="hidden-md hidden-sm hidden-xs">
+                <div id="fore-keyboard"></div>
+                <div id="fore-mouse"></div>
+                <div id="fore-notebook"></div>
+                <div id="fore-monitor"></div>
+                <div id="fore-stack"></div>
+                <div id="fore-hdd"></div>
+                <div id="fore-scanner"></div>
+            </div>
         </div>
         
         <!-- ************************ CONTENT *********************** -->
@@ -153,87 +153,14 @@
                 1<br/>
                 1<br/>
                 1<br/>
-                
             </p>
         </div>
-        <div class="">
-        </div>
         
-        <!-- ******************** HEADER ANIMATION ****************** -->
-        <script>
-            jQuery(window).scroll(function()
-            {
-                // Parallax Effects
-                
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#headerLogo').css(
-                {
-                        "transform" : "translate(0px, " +vScroll/2+ "px)"
-                });
-                
-                //
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#fore-keyboard').css(
-                {
-                        "transform" : "translate(" +vScroll/2+ "px, -" +vScroll/12+ "px)"
-                });
-                
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#fore-mouse').css(
-                {
-                        "transform" : "translate(" +vScroll/4+ "px, -" +vScroll/12+ "px)"
-                });
-                
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#fore-notebook').css(
-                {
-                        "transform" : "translate(" +vScroll/10+ "px, -" +vScroll/12+ "px)"
-                });
-                
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#fore-monitor').css(
-                {
-                        "transform" : "translate(0px, -" +vScroll/12+ "px)"
-                });
-                
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#fore-stack').css(
-                {
-                        "transform" : "translate(" +vScroll/-10+ "px, -" +vScroll/12+ "px)"
-                });
-                
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#fore-hdd').css(
-                {
-                        "transform" : "translate(" +vScroll/-4+ "px, -" +vScroll/12+ "px)"
-                });
-                
-                var vScroll = jQuery(this).scrollTop();
-                jQuery('#fore-scanner').css(
-                {
-                        "transform" : "translate(" +vScroll/-2.7+ "px, -" +vScroll/12+ "px)"
-                });
-            });
-            
-            //Calling dropdown hover function
-            $.fn.bootstrapDropdownHover();
-            
-            //Other Animations
-            $(window).scroll(function() {
-                $('#searchform').each(function(){
-                var imagePos = $(this).offset().top;
-
-                var topOfWindow = $(window).scrollTop();
-                    if (imagePos < topOfWindow+400) {
-                        $(this).addClass("slideLeft");
-                    }
-                });
-            });
-            
-            $('#searchform').click(function() {
-                $(this).addClass("slideLeft");
-            });
-        </script>
+        <script src="assets/js/jquery-1.12.3.min.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+        <script src="assets/js/animations.js" type="text/javascript"></script>
+        <script src="assets/js/navbar.js" type="text/javascript"></script>
+        <script src="assets/js/jsinput.js" type="text/javascript"></script>
         <%@include file="footer.jsp" %>
         </div>
     </body>
