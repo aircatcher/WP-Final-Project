@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  */
 public class DBConn
 {
-    private static final String DBURL = new String("jdbc:mysql://localhost:3306/wpdb");
+    private static final String DBURL = new String("jdbc:mysql://localhost:3306/bsdb");
     private static final String DBUsername = new String("root");
     private static final String DBPassword = new String("");
     public static final String JDBCDriver = new String("com.mysql.jdbc.Driver");

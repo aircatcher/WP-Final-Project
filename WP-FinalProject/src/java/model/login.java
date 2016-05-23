@@ -2,6 +2,9 @@ package model;
 
 public class login
 {
+    String username;
+    String password;
+    
     public String getUsername() {
         return username;
     }

@@ -42,7 +42,7 @@ public class ChangePassword extends HttpServlet
         }
         
         if(DBConn.changePassword(username, password, newPassword))
-            response.sendRedirect("profile.jsp?success=1");
+            response.sendRedirect("admin/index.html?success=1");
         else
         {
             if (!password.equals(currentPassword))

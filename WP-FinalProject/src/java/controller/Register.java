@@ -44,12 +44,12 @@ public class Register extends HttpServlet
             if (DBConn.newUser(username, email, password, 0))
             {
                 if (!email.equals(emailFormat))
-                    response.sendRedirect("index.jsp?emailFormat=1");
+                    response.sendRedirect("login.jsp?emailFormat=1");
                 if (!password.equals(confirmPassword))
-                response.sendRedirect("index.jsp?pw=1");
+                response.sendRedirect("login.jsp?pw=1");
             }
             else
-                response.sendRedirect("index.jsp?registered=1");
+                response.sendRedirect("login.jsp?registered=1");
         }
         catch (ClassNotFoundException ex)
         { Logger.getLogger(Register.class.getName()).log(Level.SEVERE, null, ex); }

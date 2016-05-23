@@ -2,6 +2,10 @@ package model;
 
 public class register
 {
+    String username;
+    String password;
+    String email;
+    
     public String getUsername() {
         return username;
     }

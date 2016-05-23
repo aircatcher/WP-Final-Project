@@ -51,7 +51,7 @@
   zoom: 1;
 	filter: alpha(opacity=65);
 	opacity: 0.65;
-  background: transparent url('assets/images/search.png') top left no-repeat;
+  background: transparent url('../images/logo/search.png') top left no-repeat;
   /* Icon credits to Brightmix http://www.iconfinder.com/icondetails/43272/128/find_loop_magnify_monotone_search_zoom_icon */
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s linear;
@@ -102,6 +102,6 @@
   zoom: 1;
 	filter: alpha(opacity=65);
 	opacity: 0.65;
-  background: transparent url('assets/images/search.png') top left no-repeat;
+  background: transparent url('../images/logo/search.png') top left no-repeat;
   /* Icon credits to Brightmix http://www.iconfinder.com/icondetails/43272/128/find_loop_magnify_monotone_search_zoom_icon */
 }

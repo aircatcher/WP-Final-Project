@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
     <link href="assets/css/login.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/css/table.css" rel="stylesheet" type="text/css"/>
     <title>Welcome | Login</title>
 </head>
 
@@ -47,8 +46,9 @@
                         <input type="password" name="password" required autocomplete="on"/>
                     </div>
                     <p class="forgot"><a href="forgotPassword.jsp">Forgot Password?</a></p>
-                    <button class="button button-block"/>Log In</button>
+                    <button class="button button-block"/>Log In</button><br/>
                 </form>
+                <button type="button" class="button button-block"><a href="index.jsp">Cancel</a></button>
             </div>
             
             <div id="signup">
@@ -70,12 +70,13 @@
                         <label>Confirm Password<span class="req">*</span></label>
                         <input type="password" name="rConfirmPassword" required autocomplete="off"/>
                     </div>
-                    <button type="submit" class="button button-block">Get Started</button>
+                    <button type="submit" class="button button-block">Get Started</button><br/>
                 </form>
+                <button type="button" class="button button-block"><a href="index.jsp">Cancel</a></button>
             </div>
         </div><!-- tab-content -->
     </div> <!-- /form -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="assets/js/index.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-1.12.3.min.js" type="text/javascript"></script>
+    <script src="assets/js/login.js" type="text/javascript"></script>
 </body>
 </html>

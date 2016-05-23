@@ -30,9 +30,9 @@ public class Login extends HttpServlet
         if (session!=null) session.setAttribute("username", loginUsername);
         
         if (DBConn.loginUser(loginUsername, loginPassword))
-            response.sendRedirect("profile.jsp");
+            response.sendRedirect("admin/index.html");
         else
-            response.sendRedirect("index.jsp?invalid=1");
+            response.sendRedirect("login.jsp?invalid=1");
         
         out.close();
     }
