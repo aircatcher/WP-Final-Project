@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+    width: 15px;
+    background: #fff;
+}
+::-webkit-scrollbar-button {
+    background-color: #AAFFAA;
+}
+/* Track */
+::-webkit-scrollbar-track {
+-webkit-border-radius: 0;
+border-radius: 0;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #0F5F4A;
+    background: #0F5F4A;
+}
+::-webkit-scrollbar-corner {
+    background: #222;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0;
+border-radius: 0;
+background: #222;
+}
+::-webkit-scrollbar-thumb:hover {
+-webkit-border-radius: 0;
+border-radius: 0;
+background: #179B77;
+}
